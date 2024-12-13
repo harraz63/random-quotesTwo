@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Quotes Inspirational Motivational Wisdom Encouragement Reflection Thought-provoking">
+  <title>Quotes App</title>
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Inline style for quick example */
+    body {
+      background-color: rgba(255, 192, 203, 0.42);
+
+    }
+
+    #quote-box {
+      background: rgb(236, 166, 178);
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px 30px;
+      margin: 20px auto;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    #quote-caption {
+      font-size: 1.5rem;
+      color: #333;
+      font-style: italic;
+    }
+
+    #quote-author {
+      font-size: 1.2rem;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    button {
+      background-color: rgb(232, 151, 165);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #09c;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div id="main" class="text-center mt-5">
+      <h1>Quote of the Day</h1>
+      <p class="my-md-4">Press the button below to receive a random quote!</p>
+      <div id="quote-box">
+        <p id="quote-caption"></p>
+        <p id="quote-author"></p>
+      </div>
+      <button onclick="getRandomQuotes();">New Quote</button>
+    </div>
+  </main>
+
+  <!-- Main JS File -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
